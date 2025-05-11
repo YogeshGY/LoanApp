@@ -1,0 +1,157 @@
+.user-container {
+    padding: 32px;
+    background-color: #f5faf7;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.user-card_get_loan {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e7f5eb;
+    border: 2px dashed #132e1a;
+    align-items: center;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 24px;
+    color: #132e1a;
+}
+
+.user-card_get_loan button {
+    background-color: #132e1a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 12px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    max-width: 200px;
+}
+
+
+.user-card_get_loan button:hover {
+    background-color: #165f36;
+}
+
+.user-card_payment {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.user-card_payment p {
+    color: #1b422b;
+    font-weight: 500;
+    flex: 1;
+    text-align: center;
+}
+
+.input_user {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #c3dacd;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    font-size: 16px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.user-card_applied_loans_filter_sort {
+    display: flex;
+    gap: 16px;
+}
+
+.user-card_applied_loans_filter_sort p {
+    background-color: #d1fae5;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #065f46;
+    transition: background-color 0.2s ease;
+}
+
+.user-card_applied_loans {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.user-card_applied_loans p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #132e1a;
+}
+
+.user-card_applied_loans_list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-card_applied_loans_list_item {
+    background-color: #ffffff;
+    margin-bottom: 12px;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+}
+
+.user-card_applied_loans_list_item>p {
+    font-weight: 600;
+    color: #1a3d2b;
+}
+
+.user-card_applied_loans_list_item_details {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 4px;
+    gap: 10px;
+    font-size: 15px;
+}
+
+.user-card_applied_loans_list_item_details p {
+    color: #444;
+}
+
+.user-card_applied_loans_list_item_details button {
+    background-color: #dc2626;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.user-card_applied_loans_list_item_details button:hover {
+    background-color: #b91c1c;
+}
+
+.approved_1 {
+    font-weight: bold;
+    color: #27a308;
+}
+
+.pending_1 {
+    font-weight: bold;
+    color: #1d34ff;
+}
+
+.rejected_1 {
+    font-weight: bold;
+    color: #e91111;
+}

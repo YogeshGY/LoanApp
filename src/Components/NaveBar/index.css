@@ -1,0 +1,39 @@
+.nav_bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #1f3d2b;
+    padding: 24px 16px;
+    min-height: 100vh;
+    width: 180px;
+    color: #ffffff;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav_bar p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #a3de4a;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.dashboard_button,
+.loan_button {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.dashboard_button:hover,
+.loan_button:hover {
+    background-color: #4ade80;
+    color: #132e1a;
+}

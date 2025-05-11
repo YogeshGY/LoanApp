@@ -1,0 +1,228 @@
+.dashboard_container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f4f7f5;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.dashboard_content {
+    flex-grow: 1;
+    padding: 32px;
+    background-color: #ffffff;
+}
+
+.dashboard_heading {
+    font-size: 28px;
+    font-weight: 600;
+    color: #132e1a;
+    margin-bottom: 24px;
+}
+
+.dashboard_stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+
+.dashboard_card_logo {
+    display: flex;
+    align-items: center;
+    background-color: #e7f5eb;
+    color: #132e1a;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 500;
+    max-width: 200px;
+    padding-right: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+
+
+.dashboard_logo {
+    margin: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #065f46;
+    color: white;
+    height: 100%;
+    width: 100%;
+    max-width: 100px;
+    margin-right: 10px;
+    font-size: 0px;
+}
+
+.dashboard_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.dashboard_card p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #1a3d2b;
+}
+
+.dashboard_filter_sort {
+    display: flex;
+    gap: 12px;
+}
+
+.dashboard_filter_sort p {
+    background-color: #d1fae5;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #065f46;
+    transition: background-color 0.2s ease;
+}
+
+.dashboard_filter_sort p:hover {
+    background-color: #a7f3d0;
+}
+
+.dashboard_loan_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dashboard_loan_item {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 1fr 0.5fr;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 16px;
+    border-radius: 8px;
+    align-items: center;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    column-gap: 20px;
+}
+
+.dashboard_loan_item:first-child {
+    font-weight: 600;
+    background-color: #edf7f1;
+}
+
+.dashboard_loan_delete_button {
+    background-color: #dc2626;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.dashboard_loan_delete_button:hover {
+    background-color: #b91c1c;
+}
+
+.item_diaplay {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.user_details_profile_container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font-size: 15px;
+}
+
+.profile_logo {
+    font-size: 50px;
+    padding-right: 5px;
+}
+
+
+
+.subpara {
+    color: gray;
+    margin: 0px;
+}
+
+.approved {
+    background-color: rgb(39, 163, 8);
+    padding: 8px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+}
+
+.pending {
+    background-color: rgb(29, 52, 255);
+    padding: 8px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+}
+
+.rejected {
+    background-color: rgb(233, 17, 17);
+    padding: 8px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+}
+
+.update_button_loan {
+    background-color: #4a6ade;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.2s ease;
+}
+
+.cancel_button_loan {
+    background-color: #841818;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.popup_form_box {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: white;
+    padding: 12px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    width: 200px;
+    border-radius: 6px;
+}
+
+.popup_form_box label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.popup_form_box input {
+    width: 100%;
+    padding: 6px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.chart_section{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
