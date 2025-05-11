@@ -79,6 +79,51 @@ class Dashboard extends Component {
             this.setState({ errorMessage: "Error fetching loans. Please try again later." });
         }
     };
+    onUpdateLoan = async (loanId) => {
+        const { updatedOfficer, updatedStatus } = this.state;
+
+        try {
+            const response = await fetch(`https://loan-backend-dwqw.onrender.com/loan/${loanId}/status`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                    Authorization: `Bearer ${cookies.get('token')}`
+                },
+                body: JSON.stringify({
+                    officer: updatedOfficer,
+                    status: updatedStatus
+                })
+            });
+
+            if (response.ok) {
+                this.getAppliedLoans(); 
+                this.setState({ showPopupId: null });
+            } else {
+                console.error("Failed to update loan");
+            }
+        } catch (error) {
+            console.error("Error updating loan:", error);
+        }
+    };
+
+    onDeleteLoan = async (loanId) => {
+        try {
+            const response = await fetch(`https://loan-backend-dwqw.onrender.com/loan/${loanId}`, {
+                method: 'DELETE',
+                headers: {
+                    Authorization: `Bearer ${cookies.get('token')}`
+                }
+            });
+
+            if (response.ok) {
+                this.getAppliedLoans();
+            } else {
+                console.error("Failed to delete loan");
+            }
+        } catch (error) {
+            console.error("Error deleting loan:", error);
+        }
+    };
 
     processLoanData = (data) => {
         const loanStatuses = { approved: 0, pending: 0, rejected: 0 };

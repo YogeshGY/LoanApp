@@ -12,6 +12,7 @@ class App extends Component {
     return (
       <div className="App">
         <Routes>
+          <Route path="/" element={<Login />} />
           <Route path="/login" element={<Login />} />
 
           <Route
@@ -38,6 +39,7 @@ class App extends Component {
               </ProtectedRoute>
             }
           />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </div>
     );

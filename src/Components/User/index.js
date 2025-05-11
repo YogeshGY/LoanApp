@@ -41,7 +41,7 @@ class User extends Component {
     // Function to delete a loan
     onDeleteLoan = async (id) => {
         try {
-            const response = await fetch(`/loan/${id}`, {
+            const response = await fetch(`https://loan-backend-dwqw.onrender.com/loan/${id}`, {
                 method: "DELETE",
                 headers: {
                     "Content-Type": "application/json",
